@@ -1,0 +1,96 @@
+   @font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+   @font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('/intro/font/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+ font-weight: normal;
+}
+.notosanskr{ 
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: normal;
+   }
+
+.notosanskrB * { 
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+   }
+
+body{ font-family: 'Cafe24Ssurround';}
+
+.intro{ min-height: 50vh; /* background-color: #ccc; */
+    position: relative; top: 57px;}
+    
+.intro p{font-size: 20px; }
+/* .intro .intro-box {    left: 24px;
+    top: 164px;
+    margin: 0;
+    width: 100%;}
+    
+.intro .intro-txt{    overflow: hidden;
+    display: block;
+    height: 82px;
+    position: relative;}
+
+.txt-ani{ width: 100%; display: inline-block;}
+.content .txt-ani>span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82px;
+    transform: translateY(100px);
+    opacity: 0;
+    color: #121212;
+}
+
+.txt-ani:nth-child(1){transform: translateY(0); opacity: 1; transition: transform 1s ease,opacity 1s ease;}
+.txt-ani:nth-child(2){transform: translateY(0); opacity: 1; transition: transform 1.5s ease,opacity 1.5s ease;}
+.txt-ani:nth-child(3){transform: translateY(0); opacity: 1; transition: transform 2s ease,opacity 2s ease;} */
+
+
+
+
+.section{
+    min-height: 100vh;
+    padding: 80px 0;
+    box-sizing: border-box;
+}
+
+.section h2{
+    text-align: center;
+}
+.topBtn{ position: fixed; right: 0; bottom: 0; width: 50px; height: 50px; background-color: black; color: white; transform: translateX(100%); transition: 0.5s;}
+
+#hd {position: fixed; left: 0; right: 0; top: 0; z-index: 100000;
+background-color: #fff; transition: 0.5s;
+box-shadow: 0px 4px 5px #ccc;}
+/* #hd h1:hover{ cursor: pointer;} */
+#hd h1 img{ width: 150px; }
+#hd li.on a {color: red; transition: all 0.5s;}
+#hd li a {margin-left: 15px; transition: all 0.5s; }
+
+
+#interview i{ font-family: xeicon;}
+#interview dt{ border-bottom: 2px solid #222; border-top: 3px solid #222; padding: 0 1rem; font-size: 1.2rem; line-height: 1.5rem; margin-top: 10px;}
+#interview dd{ padding: 2rem; background-color: #ccc; line-height: 1.2rem; display: none; }
+#interview dt.on + dd{display: block;}
+.xi-plus-min{ float: right;}
+#interview dt.on .xi-plus-min::before{ content: "\e91b"; }
+.topBtn{ padding-top: 10px; text-align: center;}
+.topBtn:hover{  text-decoration: none; color: #444; }
+
+/* 스크롤 내렸을 때 변화가 생기는 객체들 */
+.scroll #hd{ background-color: rgb(216, 216, 216);}
+.scroll .topBtn{ transform: translateX(0);}
